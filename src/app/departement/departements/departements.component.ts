@@ -15,7 +15,6 @@ export class DepartementsComponent {
   actions = PaginationActions;
   collection$: Observable<Departement[]> = this.store.select(fromStore.selectFilteredCollection);
   pagination$: Observable<Pagination> = this.store.select(fromStore.selectedPagination);
-
   pageItems$: Observable<Departement[]> = this.store.select(fromStore.selectPageItems);
 
   constructor(
