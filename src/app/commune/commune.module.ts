@@ -12,9 +12,13 @@ import { NgbrxPaginatorModule } from 'ngbrx-paginator';
   imports: [
     CommonModule,
     NgbrxPaginatorModule.forFeature({
-      featureKey: 'Commune/Pagination',
-      allDataSelector: fromCommune.selectAll,
-      filterFunction: fromCommune.filterFunction
+      paginators: [
+        {
+          featureKey: 'Commune/Pagination',
+          allDataSelector: fromCommune.selectAll,
+          filterFunction: fromCommune.filterFunction
+        }
+      ]
     }),
     StoreModule.forFeature(fromCommune.communesFeature),
   ],
