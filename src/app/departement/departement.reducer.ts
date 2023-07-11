@@ -65,6 +65,14 @@ export const {
   selectTotal,
 } = departementsFeature;
 
-export function filterFunction(items: Departement[], query: string): Departement[] {
+export function byName(items: Departement[], query: string): Departement[] {
   return items.filter((item: Departement) => !query || item.nom.toLowerCase().indexOf(query.toLocaleLowerCase()) === 0)
+}
+
+export function byCode(items: Departement[], query: string): Departement[] {
+  return items.filter((item: Departement) => !query || item.code === query)
+}
+
+export function byRegion(items: Departement[], query: string): Departement[] {
+  return items.filter((item: Departement) => !query || item.region === query)
 }

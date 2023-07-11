@@ -3,16 +3,17 @@
 
     <h3>
       Liste des départements
-      ({{ (numberOfFilteredItems$ | async) }}<span *ngIf="(filterValue$ | async) as filter"> {{ filter }}</span>)
+      ({{ (numberOfFilteredItems$ | async) }}<span *ngIf="(filterQuery$ | async) as filter"> {{ filter }}</span>)
     </h3>
     <ngbrx-paginator
-      [featureKey]="featureKey"
+      [key]="key"
     ></ngbrx-paginator>
   </div>
   <div class="card-body">
       <div class="list-group">
         <div class="list-group-item" *ngFor="let item of pageItems$ | async">
           {{ item.code }} {{ item.nom }}
+          <span class="right">région {{ item.region }}</span>
         </div>
       </div>
   </div>
