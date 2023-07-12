@@ -4952,10 +4952,10 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-ngbrx-paginator@0.0.13:
-  version "0.0.13"
-  resolved "https://registry.yarnpkg.com/ngbrx-paginator/-/ngbrx-paginator-0.0.13.tgz#b7d14570e99c3909ac2002366ae25febf941ff04"
-  integrity sha512-F8Oyrw5RK8L/3IFSxwkoYd6LNLGc0MZVpvbQFjhhvMb0BAKnZ9agukj3xuXDzyie3OqQUSuud7VPQHiPlBgbew==
+ngbrx-paginator@0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/ngbrx-paginator/-/ngbrx-paginator-0.0.14.tgz#37d5f5e1330be8e2a2aeaf3e8d804794aa500e5c"
+  integrity sha512-m9IVfCzl3zQnI4pY45Sqt/a5DkdPbuFCvt9pQYQb3S052YBuoQXTlW38hghfxCiXUPNLJ9LjaYXY639WoaQ5XA==
   dependencies:
     tslib "^2.3.0"
 
