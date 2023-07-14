@@ -19,6 +19,8 @@ import { NgbrxPaginatorModule } from 'ngbrx-paginator';
           filters: {
             'By name': fromCommune.byName,
             'By code': fromCommune.byCode,
+            'Population >': fromCommune.byPopulationGreaterThan,
+            'Population <': fromCommune.byPopulationLesserThan,  
           } 
         }
       ]
