@@ -9,10 +9,12 @@ import { NgbrxPaginatorService } from 'ngbrx-paginator';
   styleUrls: ['./departements.component.css']
 })
 export class DepartementsComponent {
-  key = 'Departement/Pagination'
-  pageItems$: Observable<Departement[]> = this.paginationService.getPageItems$<Departement>(this.key);
+  key = 'Departement/Pagination';
+  collection$: Observable<Departement[]> = this.paginationService.getPageItems$<Departement>(this.key);
 
   constructor(
     private paginationService: NgbrxPaginatorService
-  ) { }
+  ) {
+  }
+
 }

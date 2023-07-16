@@ -12,18 +12,16 @@ import { NgbrxPaginatorModule } from 'ngbrx-paginator';
   imports: [
     CommonModule,
     NgbrxPaginatorModule.forFeature({
-      paginators: [
-        {
-          key: 'Departement/Pagination',
-          pageSizeOptions: [10, 20, 30],
-          allDataSelector: fromDepartement.selectAll,
-          filters: {
-            'By name': fromDepartement.byName,
-            'By code': fromDepartement.byCode,
-            'By region': fromDepartement.byRegion
-            }
-        }
-      ]
+      paginators: [{
+        key: 'Departement/Pagination',
+        filters: {
+          'Nom': { filter: fromDepartement.byName },
+          'Code': { filter: fromDepartement.byCode },
+          'Régions/COM': { filter: fromDepartement.byRegion, values: fromDepartement.selectRegions }
+        },
+        allDataSelector: fromDepartement.selectAll,
+        pageSizeOptions: [10, 20, 30]
+      }]
     }),
     StoreModule.forFeature(fromDepartement.departementsFeature),
   ],

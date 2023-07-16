@@ -3,22 +3,14 @@
     <h3>
       Liste des départements
       <div class="right">
-        <small
-          ><small
-            ><ngbrx-paginator-filter-desc
-              [key]="key"
-            ></ngbrx-paginator-filter-desc></small
-        ></small>
+        <small><small><ngbrx-paginator-filter-desc [key]="key"></ngbrx-paginator-filter-desc></small></small>
       </div>
     </h3>
     <ngbrx-paginator [key]="key"></ngbrx-paginator>
   </div>
   <div class="card-body">
     <div class="list-group">
-      <div class="list-group-item" *ngFor="let item of pageItems$ | async">
-        {{ item.code }} {{ item.nom }}
-        <span class="right">région {{ item.region }}</span>
-      </div>
+      <div class="list-group-item" *ngFor="let item of collection$ | async">{{ item.code }} {{ item.nom }}</div>
     </div>
   </div>
 </div>
