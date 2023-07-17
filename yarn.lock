@@ -4954,10 +4954,10 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-ngbrx-paginator@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/ngbrx-paginator/-/ngbrx-paginator-0.1.1.tgz#d7d10621c3418bec46b31f31dca4bec7a3f30c6c"
-  integrity sha512-tyaRgQ+1MtWsSfo6idmEKw7UNaI1vhVjr9S3HqTvvRZ1us82gTwxrjT5O8M7uLuT4zbfo+V1sKonQgpDa1Q3Ww==
+ngbrx-paginator@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/ngbrx-paginator/-/ngbrx-paginator-0.1.2.tgz#9238de1eb444176fc53c3b2a46f24ef58423e844"
+  integrity sha512-uGJiOiXQRUhb2B70idU9AgqYHoC+59RoLfGv7W2V9k0p/v1obqUAv/nUgOjiEFjgTo7jgM/T/K/9be4gM6EvBg==
   dependencies:
     tslib "^2.3.0"
 
@@ -5767,9 +5767,9 @@ robust-predicates@^3.0.0:
   integrity sha512-IXgzBWvWQwE6PrDI05OvmXUIruQTcoMDzRsOd5CDvHCVLcLHMTSYvOK5Cm46kWqlV3yAbuSpBZdJ5oP5OUoStg==
 
 rollup@^3.21.0:
-  version "3.26.2"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.26.2.tgz#2e76a37606cb523fc9fef43e6f59c93f86d95e7c"
-  integrity sha512-6umBIGVz93er97pMgQO08LuH3m6PUb3jlDUUGFsNJB6VgTCUaDFpupf5JfU30529m/UKOgmiX+uY6Sx8cOYpLA==
+  version "3.26.3"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.26.3.tgz#bbc8818cadd0aebca348dbb3d68d296d220967b8"
+  integrity sha512-7Tin0C8l86TkpcMtXvQu6saWH93nhG3dGQ1/+l5V2TDMceTxO7kDiK6GzbfLWNNxqJXm591PcEZUozZm51ogwQ==
   optionalDependencies:
     fsevents "~2.3.2"
 
