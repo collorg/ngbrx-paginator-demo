@@ -1,14 +1,10 @@
 <div class="card">
   <div class="card-header sticky-top">
-    <h3>
-      Liste des départements
-      <div class="right">
-        <small><small><ngbrx-paginator-filter-desc [key]="key"></ngbrx-paginator-filter-desc></small></small>
-      </div>
-    </h3>
+    <h3>Liste des départements</h3>
     <ngbrx-paginator [key]="key"></ngbrx-paginator>
   </div>
   <div class="card-body">
+    <ngbrx-paginator-filter-desc [key]="key"></ngbrx-paginator-filter-desc>
     <div class="list-group">
       <div class="list-group-item" *ngFor="let item of collection$ | async">
         {{ item.code }} {{ item.nom }}
