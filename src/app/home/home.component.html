@@ -1,32 +1,34 @@
 <div class="card">
   <div class="card-header">
-    <h1>
-      ngbrx-paginator demo
-      <span class="right" badge badge-pill>@{{ release }}</span>
-    </h1>
-  </div>
-  <div class="card-body">
+    <div class="card-title">
+      <h1>
+        ngbrx-paginator demo
+        <span class="right small" badge badge-pill>@{{ release }}</span>
+      </h1>
+    </div>
     <div class="card">
-      <div class="card-body">
+      <div class="card-body notice">
         Go to the <a routerLink="departements">Départements</a> page and play
         with the pagination (page size, page number, filters). Go to the
-        <a btn btn-light routerLink="communes">Communes</a> page, and do the
+        <a btn btn-light routerLink="communes">Communes</a> page and do the
         same. Go back to the <a routerLink="departements">Départements</a> page.
         All your settings (page size, page number, filters) are still here.
       </div>
     </div>
-    <h2>Add pagination (with filters) to your lists</h2>
+  </div>
+  <div class="card-body">
+    <h2>How to add pagination (with filters) to your collections in @ngrx</h2>
 
     We assume that you have a <code>data.module.ts</code> in which you have a
-    slice of store and a <code>data-list.component</code> which presents the
-    list of data unpaginated.
+    slice of your ngrx state and a <code>data-list.component</code> which
+    presents the collection unpaginated.
 
     <h3>data.module.ts</h3>
 
     Add the <code>NgbrxPaginatorModule.forFeature</code> function in the imports
     array of your NgModule with an object containing the
     <code>paginators</code>.
-    
+
     <div [innerHTML]="moduleAfter | language : 'typescript' | markdown"></div>
 
     Each paginator is an object with the following properties:
@@ -42,21 +44,21 @@
       <li>
         <code>filters?</code>: (optional) an object of type {{ "{" }} [key:
         string]: {{ "{" }} filter, values? {{ "}" }} {{ "}" }}. Each filter is
-        identified by a <code>key</code>
+        identified by a key which will be used as a placeholder for the input or
+        the default value for the select. To each key is associated an object
+        with the following properties:
+        <ul>
+          <li>
+            <code>filter</code>: a filter function that takes two parameters
+            <code>(items: Data[], query: string)</code> and returns
+            <code>Data[]</code>;
+          </li>
+          <li>
+            <code>values</code>: (optional) a MemoizedSelector. The values
+            provided are then presented in an HTML select element.
+          </li>
+        </ul>
       </li>
-      which will be used as a placeholder for the input or the default value for
-      the select.
-      <ul>
-        <li>
-          <code>filter</code>: a filter function that takes two parameters
-          <code>(items: Data[], query: string)</code> and returns
-          <code>Data[]</code>;
-        </li>
-        <li>
-          <code>values</code>: (optional) a MemoizedSelector. The values
-          provided are then presented in an HTML select element.
-        </li>
-      </ul>
       <li>
         <code>pageSizeOptions?</code>: (optional) defaults to [5, 10, 25, 100].
       </li>
@@ -99,7 +101,7 @@
         <div [innerHTML]="templateAfter | language : 'html' | markdown"></div>
         Simply add the template selector <code>ngbrx-paginator</code> with the
         <code>key</code> as input. You now have a paginated list with filters.
-        <br>
+        <br />
         If you have provided filters to your paginator, you may want to use
         <code>ngbrx-paginator-filters-desc</code> with the <code>key</code> as
         input to show the active filter to the user.
