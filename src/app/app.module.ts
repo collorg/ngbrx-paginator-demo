@@ -9,6 +9,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { DepartementModule } from './departement/departement.module';
 import { CommuneModule } from './commune/commune.module';
 import { HomeComponent } from './home/home.component';
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { HomeComponent } from './home/home.component';
         persist: true
       }
     }),
+    MarkdownModule.forRoot(),
     DepartementModule,
     CommuneModule
   ],
