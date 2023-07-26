@@ -12,8 +12,7 @@ import { NgbrxPaginatorModule } from 'ngbrx-paginator';
   imports: [
     CommonModule,
     NgbrxPaginatorModule.forFeature({
-      paginators: [{
-        key: 'Commune/Pagination',
+      'Commune/Pagination': {
         filters: {
           'Code': { filter: fromCommune.byCode },
           'Nom': { filter: fromCommune.byName },
@@ -21,7 +20,7 @@ import { NgbrxPaginatorModule } from 'ngbrx-paginator';
           'Population <': { filter: fromCommune.byPopulationLesserThan }
         },
         allDataSelector: fromCommune.selectAll
-      }]
+      }
     }),
     StoreModule.forFeature(fromCommune.communesFeature),
   ],

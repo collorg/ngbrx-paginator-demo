@@ -6,14 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  release = '0.1.6'
+  release = '0.2.0'
   moduleAfter = `
 import * as fromData from 'data/data.reducer';
 import { NgbrxPaginatorModule } from 'ngbrx-paginator';
 // [...]
   NgbrxPaginatorModule.forFeature({
-    paginators: [{
-      key: 'DataList/Pagination',
+    'DataList/Pagination': // The name of the paginator must be unique for the application
+    {
       allDataSelector: fromData.selectAll,
 
       // Optional
@@ -22,7 +22,7 @@ import { NgbrxPaginatorModule } from 'ngbrx-paginator';
         'Code': { filter: fromData.byCode },
       },
       pageSizeOptions: [10, 20, 30] // Defaults to [5, 10, 25, 100]
-    }]
+    }
   }),
   `
   componentClassBefore = `

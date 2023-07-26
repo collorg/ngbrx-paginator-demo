@@ -20,23 +20,20 @@
     <h2>How to add pagination (with filters) to your collections in @ngrx</h2>
 
     We assume that you have a <code>data.module.ts</code> in which you have a
-    slice of your state and a <code>data-list.component</code> which
-    presents the collection unpaginated.
+    slice of your state and a <code>data-list.component</code> which presents
+    the collection unpaginated.
 
     <h3>data.module.ts</h3>
 
     Add the <code>NgbrxPaginatorModule.forFeature</code> function in the imports
-    array of your NgModule with an object containing the
-    <code>paginators</code>.
+    array of your NgModule with an object containing the paginators. Each
+    paginator
 
     <div [innerHTML]="moduleAfter | language : 'typescript' | markdown"></div>
 
-    Each paginator is an object with the following properties:
+    Each paginator is an object identified by a unique name in the application
+    with the following properties:
     <ul>
-      <li>
-        <code>key</code>: a unique string that identifies the paginator in the
-        application;
-      </li>
       <li>
         <code>allDataSelector</code>: the ngrx selector that returns the
         observable of you data set;
