@@ -12,6 +12,7 @@
         with the pagination (page size, page number, filters). Go to the
         <a btn btn-light routerLink="communes">Communes</a> page and do the
         same. Go back to the <a routerLink="departements">Départements</a> page.
+        Reload the application...
         All your settings (page size, page number, filters) are still here.
       </div>
     </div>
@@ -26,8 +27,7 @@
     <h3>data.module.ts</h3>
 
     Add the <code>NgbrxPaginatorModule.forFeature</code> function in the imports
-    array of your NgModule with an object containing the paginators. Each
-    paginator
+    array of your NgModule with an object containing the paginators:
 
     <div [innerHTML]="moduleAfter | language : 'typescript' | markdown"></div>
 

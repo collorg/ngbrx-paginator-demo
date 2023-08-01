@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  release = '0.2.1'
+  release = '0.2.2'
   moduleAfter = `
 import * as fromData from 'data/data.reducer';
 import { NgbrxPaginatorModule } from 'ngbrx-paginator';
