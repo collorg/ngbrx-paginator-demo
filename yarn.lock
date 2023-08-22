@@ -2177,7 +2177,7 @@ ajv@^6.12.5:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-angular-cli-ghpages@1.0.6:
+angular-cli-ghpages@^1.0.0:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/angular-cli-ghpages/-/angular-cli-ghpages-1.0.6.tgz#ca8ca04afc01166c69b97aeb5af7272777aaca66"
   integrity sha512-CMX7Z9fTzW1MSO2ypJDKmxfenb5m56SzCSeGDdD4faiOU5tV6PoUaMhramIHK3WAJZBOb69kNBh8/ALWq/0ilA==
@@ -5301,10 +5301,10 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-ngbrx-paginator@0.2.4:
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/ngbrx-paginator/-/ngbrx-paginator-0.2.4.tgz#b1ccfa41eee8600912b9317657b06dd0babc6159"
-  integrity sha512-I9sjl8CFborPJjFvwuk2OzoyWoSSjRd3vP/eX2ohoeJs977wuebjrWiy0+n4kHQSqUop8khskSsh27X3vSTU6A==
+ngbrx-paginator@0.2.5:
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/ngbrx-paginator/-/ngbrx-paginator-0.2.5.tgz#833d9361628a0a3858d400fc6a2e0d2693720738"
+  integrity sha512-ON/18R/g+70o8fQ3193kGQ9GEMCFrjks3a7FUIn3+60RrckEgEaPtbFB9+eRJEoLEaTykZdBYI6GQ8a/rTKblQ==
   dependencies:
     tslib "^2.3.0"
 
