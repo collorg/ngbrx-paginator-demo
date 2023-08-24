@@ -51,8 +51,12 @@
             <code>Data[]</code>;
           </li>
           <li>
-            <code>values</code>: (optional) a MemoizedSelector. The values
+            <code>values?</code>: (optional) a MemoizedSelector. The values
             provided are then presented in an HTML select element.
+          </li>
+          <li>
+            <code>inactivate?</code>: (optional) boolean. To hide the filter
+            by default.
           </li>
         </ul>
       </li>
@@ -84,7 +88,7 @@
         Inject <code>NgbrxPaginatorService</code> in your component. Set the
         <code>key</code> that identifies the paginator and initialise
         <code>collection$</code> with
-        <code>NgbrxPaginatorService.getPageItems$</code> as shown in the sample.
+        <code>NgbrxPaginatorService.getPageItems$</code> as shown in the example.
       </div>
     </div>
     <div class="row">
